@@ -58,6 +58,52 @@ namespace csharp_calcolatrice
                 return p;
             }
         }
+        public static int CalcolaMinimoTraDueInteri(int q, int r)
+        {
+            if (q < r)
+            {
+                return q;
+            } else
+            {
+                return r;
+            }
+        }
+
+        public static double CalcolaMinimoTraDueDecimali(double s, double t)
+        {
+            if (s < t)
+            {
+                return s;
+            }
+            else
+            {
+                return t;
+            }
+        }
+
+        public static int CalcolaMassimoTraDueInteri(int u, int v)
+        {
+            if (u > v)
+            {
+                return u;
+            }
+            else
+            {
+                return v;
+            }
+        }
+
+        public static double CalcolaMassimoTraDueDecimali(double w, double x)
+        {
+            if (w > x)
+            {
+                return w;
+            }
+            else
+            {
+                return x;
+            }
+        }
 
     }
 }

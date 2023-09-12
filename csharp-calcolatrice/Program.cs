@@ -98,7 +98,45 @@
                     Console.WriteLine(risultato8);
                     break;
 
+                //Minimo tra due numeri interi
+                case 9:
+                    Console.WriteLine("Inserisci i due numeri interi  di cui vuoi conoscere il minimo");
+                    int q = int.Parse(Console.ReadLine());
+                    int r = int.Parse(Console.ReadLine());
 
+                    int risultato9 = CalcoliHelper.CalcolaMinimoTraDueInteri(q, r);
+                    Console.WriteLine(risultato9);
+                    break;
+
+                //Minimo tra due numeri double
+                case 10:
+                    Console.WriteLine("Inserisci i due numeri decimali  di cui vuoi conoscere il minimo");
+                    double s = double.Parse(Console.ReadLine());
+                    double t = double.Parse(Console.ReadLine());
+
+                    double risultato10 = CalcoliHelper.CalcolaMinimoTraDueDecimali(s, t);
+                    Console.WriteLine(risultato10);
+                    break;
+
+                //Massimo tra due numeri interi
+                case 11:
+                    Console.WriteLine("Inserisci i due numeri interi  di cui vuoi conoscere il massimo");
+                    int u = int.Parse(Console.ReadLine());
+                    int v = int.Parse(Console.ReadLine());
+
+                    int risultato11 = CalcoliHelper.CalcolaMassimoTraDueInteri(u, v);
+                    Console.WriteLine(risultato11);
+                    break;
+
+                //Minimo tra due numeri double
+                case 12:
+                    Console.WriteLine("Inserisci i due numeri decimali  di cui vuoi conoscere il massimo");
+                    double w = double.Parse(Console.ReadLine());
+                    double x = double.Parse(Console.ReadLine());
+
+                    double risultato12 = CalcoliHelper.CalcolaMassimoTraDueDecimali(w, x);
+                    Console.WriteLine(risultato12);
+                    break;
 
             }
 
