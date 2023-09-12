@@ -69,6 +69,7 @@
                     int risultato5 = CalcoliHelper.CalcolaMoltiplicazioneInteri(i, l);
                     Console.WriteLine(risultato5);
                     break;
+
                 //Moltiplicazione di due numeri double
                 case 6:
                     Console.WriteLine("Inserisci i due numeri decimali che vuoi moltiplicare");
@@ -78,7 +79,24 @@
                     double risultato6 = CalcoliHelper.CalcolaMoltiplicazioneDecimali(m, n);
                     Console.WriteLine(Math.Round(risultato6, 2)); 
                     break;
-                
+
+                //Valore assoluto di un numero intero
+                case 7:
+                    Console.WriteLine("Inserisci il numero intero di cui vuoi conoscere il valore assoluto");
+                    int o = int.Parse(Console.ReadLine());
+
+                    int risultato7 = CalcoliHelper.CalcolaValoreAssolutoInteri(o);
+                    Console.WriteLine(risultato7);
+                break;
+
+                //Valore assoluto di un numero intero
+                case 8:
+                    Console.WriteLine("Inserisci il numero decimale di cui vuoi conoscere il valore assoluto");
+                    double p = double.Parse(Console.ReadLine());
+
+                    double risultato8 = CalcoliHelper.CalcolaValoreAssolutoDecimali(p);
+                    Console.WriteLine(risultato8);
+                    break;
 
 
 

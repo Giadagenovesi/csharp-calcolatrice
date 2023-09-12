@@ -36,5 +36,28 @@ namespace csharp_calcolatrice
             return m * n;
         }
 
+        public static int CalcolaValoreAssolutoInteri(int o) 
+        {
+            if (o < 0)
+            {
+                return o * -1;
+            } else
+            {
+                return o;
+            }
+        }
+
+        public static double CalcolaValoreAssolutoDecimali(double p)
+        {
+            if (p < 0)
+            {
+                return p * -1;
+            }
+            else
+            {
+                return p;
+            }
+        }
+
     }
 }
