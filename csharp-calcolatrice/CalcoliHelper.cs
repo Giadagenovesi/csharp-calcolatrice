@@ -112,5 +112,19 @@ namespace csharp_calcolatrice
             }
         }
 
+        //BONUS
+        public static int ElevareDueNumeriAPotenza (int y, int z)
+        {
+           
+            int accumulatore = 1;
+
+            for (int i = 0; i < z; i++) 
+            {
+                accumulatore *= y;
+
+            }
+            return accumulatore;            
+        }
+
     }
 }

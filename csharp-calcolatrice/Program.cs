@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string[] calcoliEseguibili = { "Somma di due numeri interi", "Somma di due numeri double", "Differenza tra due numeri interi", "Differenza tra due numeri double", "Moltiplicazione di due numeri interi", "Moltiplicazione di due numeri double", "Valore assoluto di un numero intero", "Valore assoluto di un numero double", "Minimo tra due numeri interi", "Minimo tra due numeri double", "Massimo tra due numeri interi", "Massimo tra due numeri double" };
+            string[] calcoliEseguibili = { "Somma di due numeri interi", "Somma di due numeri double", "Differenza tra due numeri interi", "Differenza tra due numeri double", "Moltiplicazione di due numeri interi", "Moltiplicazione di due numeri double", "Valore assoluto di un numero intero", "Valore assoluto di un numero double", "Minimo tra due numeri interi", "Minimo tra due numeri double", "Massimo tra due numeri interi", "Massimo tra due numeri double", "Eleva a potenza" };
 
             int operazioneScelta;
 
@@ -136,6 +136,17 @@
 
                     double risultato12 = CalcoliHelper.CalcolaMassimoTraDueDecimali(w, x);
                     Console.WriteLine(risultato12);
+                    break;
+
+                //BONUS
+                case 13:
+                    Console.WriteLine("inserisci il numero che vuoi elevare a potenza");
+                    int y = int.Parse(Console.ReadLine());
+                    Console.WriteLine("inserisci il numero che vuoi che corrisponda  alla potenza");
+                    int z = int.Parse(Console.ReadLine());
+
+                    int risultato13 = CalcoliHelper.ElevareDueNumeriAPotenza(y, z);
+                    Console.WriteLine(risultato13);
                     break;
 
             }
